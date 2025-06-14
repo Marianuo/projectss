@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+   <link rel="stylesheet" href="hpstyle.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome <%= user.first_name %>!</title>
+</head>
+<body>
+  <h1>Hello, <%= user.first_name %> <%= user.last_name %> 👋</h1>
+  <img src="/profile-pic/<%= user.profile_pic %>" alt="Profile Picture" style="max-width: 200px;">
+  
+  <div class="info">
+    <p><strong>Username:</strong> <%= user.username %></p>
+    <p><strong>Email:</strong> <%= user.email %></p>
+    <p><strong>Date of Birth:</strong> <%= user.dob %></p>
+  </div>
+
+  <p><a href="/logout">Logout</a></p>
+</body>
+</html>
